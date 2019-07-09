@@ -1,21 +1,17 @@
-//
-// Created by cjj on 19-7-9.
-//
-
-#include <string.h>
+#include <cstring>
 #include <iostream>
 #include <string>
 #include <map>
 using namespace std;
 /*
  * Idea:
- *
+ * 
  * Using a map store each char's index.
- *
+ * 
  * So, we can be easy to know the when duplication and the previous duplicated char's index.
- *
- * Then we can take out the previous duplicated char, and keep tracking the maxiumn length.
- *
+ * 
+ * Then we can take out the previous duplicated char, and keep tracking the maxiumn length. 
+ * 
  */
 int lengthOfLongestSubstring1(string s) {
     map<char, int> m;
